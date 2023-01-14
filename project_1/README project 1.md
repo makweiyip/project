@@ -20,6 +20,7 @@ https://www.singstat.gov.sg/find-data/search-by-theme/industry/tourism/latest-da
 (https://data.gov.sg/dataset/surface-air-temperature-mean-daily-minimum)
 
 
+
 |Feature|Type|Dataset|Description|
 |---|---|---|---|
 |total_rainfall|float|rainfall-monthly-total|Total rainfall in mm| 
@@ -57,3 +58,4 @@ For month with higher amount of rainy day, outdoor venues need to plan for more 
 
 
 
+![image](./plot.png)
