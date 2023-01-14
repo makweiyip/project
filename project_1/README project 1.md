@@ -58,4 +58,4 @@ For month with higher amount of rainy day, outdoor venues need to plan for more 
 
 
 
-![image](../plot/overview_trend.png)
+![image](./plot/overview_trend.png)
