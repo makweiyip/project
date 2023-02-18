@@ -36,11 +36,11 @@
 The technical report is split into 10 part in the code file:
 
 1. Data Loading : loading relevant file
-2. Data Cleaning and Exploratory Data Analysis: Clean dataset and do Data Analysis with vis
-3. Data Preparation and Feature Engineering : dummify and OHE and scaling of feature for predirive models usage
-4. Train test split: spliting the data to train and validating set
-5. BASE LINE MODEL Linear Model: create a base line model to compare with train model
-6. Linear Regression: train model on Linear Regression
+2. Data Cleaning and Exploratory Data Analysis: Clean dataset and do Data Analysis with visual
+3. Data Preparation and Feature Engineering : Dummify and scaling of feature for predirive models usage
+4. Train test split: Spliting the data to train and validating set
+5. BASE LINE MODEL Linear Model: Create a base line model to compare with builded train models
+6. Linear Regression: Train model on Linear Regression
 7. Comparing accuracy evaluation from Lasso, Ridge and ElasticNet models: Train model using other method and compare with each different models
 8. Predicting test resale prices for kaggle: Using train model to predict price from test set provide
 
