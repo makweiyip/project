@@ -37,7 +37,7 @@
 ![image](./plot/log_price.png)
 - Transforming predicted value to normal distribution
 
-![image2](./plot/resale price_vs_HDB age.png)
+![image2](./plot/resale_price_vs_HDB_age.png)
 - Above finding shows a linear relationship between the age of a HDB flat and the resale price. That is, the younger the HDB flat, the higher the resale price. This could be a result of the below HDB regulation. Image reference and source link is as per below.
 [Link](https://www.hdb.gov.sg/residential/buying-a-flat/financing-a-flat-purchase/housing-loan-options/housing-loan-from-hdb)
 
