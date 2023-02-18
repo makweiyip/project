@@ -41,12 +41,12 @@
 - Above finding shows a linear relationship between the age of a HDB flat and the resale price. That is, the younger the HDB flat, the higher the resale price. This could be a result of the below HDB regulation. Image reference and source link is as per below.
 [Link](https://www.hdb.gov.sg/residential/buying-a-flat/financing-a-flat-purchase/housing-loan-options/housing-loan-from-hdb)
 
-![image](./plot/resale price vs town age.png)
+![image](./plot/resale_price_vs_town age.png)
 - From this box plot, we can infer the Central areas like Queentown and Bukit Timah have a higher resale price compared to the other neighbourhoods. 
 - This could be because of Central neighbourhood's close proximity to highly connected MRT interchanges like 'Outram Park' and 'Dhoby Ghaut'. 
-![image](./plot/Mrt map.png)
+![image](./plot/Mrt_map.png)
 
-![image](./plot/resale price vs storey.png)
+![image](./plot/resale_price_vs_storey.png)
 From the above box plot, we can see there is a linear relationship between the storey of the unit and the resale price. That is, the greater the elevation of a HDB unit, the higher the resale price. This is likely due to a preference for higher floors by prospective HDB owners as the higher elevation provides better sunlight and wind ventilation. In addition, higher storey units are less likely to be prone to pests infestation given the greater distance from the ground floor rubbish chute. 
 [Link](https://www.propertyguru.com.sg/property-guides/high-floor-vs-low-floor-unit-which-is-better-45449)
 
@@ -60,7 +60,7 @@ Looking at the output of the models, from both linear and lasso regression model
 first timer owner can also take a look in the flat near the north area exmaple: woodland, sembawang. as the hdb resale price is lower in that area
 
 
-![image](./plot/top feature.png)
+![image](./plot/top_feature.png)
 
 -
 ### Thing to be improve in future:
