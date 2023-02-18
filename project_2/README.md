@@ -33,7 +33,7 @@
 
 # Technical Report 
 
-The technical report is split into 10 part in the code file:
+The technical report is split into 8 part in the code file:
 
 1. Data Loading : loading relevant file
 2. Data Cleaning and Exploratory Data Analysis: Clean dataset and do Data Analysis with visual
