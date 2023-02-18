@@ -24,13 +24,25 @@
 
 # Data set
 * [`train.csv`](./datasets/train.csv): training data provided which contain all features and HDB resale prices
-* [`test.csv`](./datasets/test.csv): test dataset will all features only. use to predict the HDB resale prices
-* [`sample_sub_reg.csv`](./datasets/sample_sub_reg.csv): sumbition template for kaggle
-* [`hdb_final_data.csv`](./datasets/hdb_final_data.csv): preprocesed data set for training
-* [`pred.csv`](./datasets/pred.csv): preprocesed data set for model prediction
-* [`lr.csv`](./datasets/lr.csv): data set for sumbition for kaggle
+* [`test.csv`](./datasets/test.csv): test dataset with all features only. Used to predict HDB resale prices
+* [`sample_sub_reg.csv`](./datasets/sample_sub_reg.csv): Submission template for kaggle
 
+* [`hdb_final_data.csv`](./datasets/hdb_final_data.csv): Pre-processed data set for training
+* [`pred.csv`](./datasets/pred.csv): Pre-processed data set for model prediction
+* [`lr.csv`](./datasets/lr.csv): Data set for submission to kaggle
 
+# Technical Report 
+
+The technical report is split into 10 part in the code file:
+
+1. Data Loading : loading relevant file
+2. Data Cleaning and Exploratory Data Analysis: Clean dataset and do Data Analysis with vis
+3. Data Preparation and Feature Engineering : dummify and OHE and scaling of feature for predirive models usage
+4. Train test split: spliting the data to train and validating set
+5. BASE LINE MODEL Linear Model: create a base line model to compare with train model
+6. Linear Regression: train model on Linear Regression
+7. Comparing accuracy evaluation from Lasso, Ridge and ElasticNet models: Train model using other method and compare with each different models
+8. Predicting test resale prices for kaggle: Using train model to predict price from test set provide
 
 # EDA
 
@@ -63,25 +75,27 @@ From the above box plot, we can see there is a linear relationship between the s
 
 # Performance of model for kaggle submission
 
-Based on the root-mean-squared-error(RSME), this production model is on par with the leaderboard, with score of 49,044 and private score of 49,954 (see below screenshot). model is still able to improve
+Based on the root-mean-squared-error(RSME), this production model is on par with the leaderboard, with score of 49,044 and private score of 49,954 (see below screenshot). this model can be still farer improve.
 
 ![image6](./plot/kaggle_score.png)
 
 
 # Conclusions and Recommendation:
 
-in this project, linear regression  were used to looked at the drivers of HDB resale prices. Linear regression is powerful because it allows us to interpret the results of the model by looking at its coefficients for each feature. However, it assumes a linear relationship between the features and the outcome, which isn't always the case in real life. 
+In this project, linear regression  was used to look at the drivers of HDB resale prices. Linear regression is powerful because it allows us to interpret the results of the model by looking at its coefficients for each feature. However, it assumes a linear relationship between the features and the outcome, which isn't always the case in real life. 
 
 
-Looking at the output of the models, from both linear and lasso regression model showed that town location, floor area, flat model, lease commencement date and distance from mrt are the top 5 drivers of HDB prices.
+Looking at the output of the models, from both linear and lasso regression model, showed that town location, floor area, flat model, lease commencement date and distance from mrt are the top 5 drivers of HDB prices.
 
-first timer owner can also take a look in the flat near the north area exmaple: woodland, sembawang. as the hdb resale price is lower in that area
+
+All in all, buyers who are price sensitive may want to focus on HDBs located in the North. For example, Woodlands and Sembawang as prices are generally lower in this region. 
+
 
 
 ![image6](./plot/top_feature.png)
 
 
-# Thing to be improve in future:
+# Things to be improve in the future:
 1. We may want to separate the datasets by flat type. This would allow analyst to specifically focus on the targeted flat type instead of inputting the entire dataset into the model, which would provide a lower accuracy when analyzing a specific flat type. 
 
 2. We can also create models incorporating all the features while excluding features that are similar to each other. Subsequently, analyst may choose to remove each individual feature at a time to verify the model's accuracy and choose to improve it further. 
