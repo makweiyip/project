@@ -32,20 +32,19 @@
 
 
 
-### EDA
+# EDA
 
 ![image](./plot/log_price.png)
 - Transforming predicted value to normal distribution
 
-
+###
 
 
 ![image2](./plot/resale_price_vs_HDB_age.png)
 - Above finding shows a linear relationship between the age of a HDB flat and the resale price. That is, the younger the HDB flat, the higher the resale price. This could be a result of the below HDB regulation. Image reference and source link is as per below.
 [Link](https://www.hdb.gov.sg/residential/buying-a-flat/financing-a-flat-purchase/housing-loan-options/housing-loan-from-hdb)
 
-
-
+###
 
 ![image3](./plot/resale_price_vs_town.png)
 - From this box plot, we can infer the Central areas like Queentown and Bukit Timah have a higher resale price compared to the other neighbourhoods. 
@@ -53,15 +52,23 @@
 ![image4](./plot/MRT_map.png)
 
 
-
+###
 
 ![image5](./plot/resale_price_vs_storey.png)
 From the above box plot, we can see there is a linear relationship between the storey of the unit and the resale price. That is, the greater the elevation of a HDB unit, the higher the resale price. This is likely due to a preference for higher floors by prospective HDB owners as the higher elevation provides better sunlight and wind ventilation. In addition, higher storey units are less likely to be prone to pests infestation given the greater distance from the ground floor rubbish chute. 
 [Link](https://www.propertyguru.com.sg/property-guides/high-floor-vs-low-floor-unit-which-is-better-45449)
 
+###
 
 
-### Conclusions and Recommendation:
+# Performance of model for kaggle submission
+
+Based on the root-mean-squared-error(RSME), this production model is on par with the leaderboard, with score of 49,044 and private score of 49,954 (see below screenshot). model is still able to improve
+
+![image6](./plot/kaggle_score.png)
+
+
+# Conclusions and Recommendation:
 
 in this project, linear regression  were used to looked at the drivers of HDB resale prices. Linear regression is powerful because it allows us to interpret the results of the model by looking at its coefficients for each feature. However, it assumes a linear relationship between the features and the outcome, which isn't always the case in real life. 
 
@@ -74,7 +81,7 @@ first timer owner can also take a look in the flat near the north area exmaple: 
 ![image6](./plot/top_feature.png)
 
 
-### Thing to be improve in future:
+# Thing to be improve in future:
 1. We may want to separate the datasets by flat type. This would allow analyst to specifically focus on the targeted flat type instead of inputting the entire dataset into the model, which would provide a lower accuracy when analyzing a specific flat type. 
 
 2. We can also create models incorporating all the features while excluding features that are similar to each other. Subsequently, analyst may choose to remove each individual feature at a time to verify the model's accuracy and choose to improve it further. 
